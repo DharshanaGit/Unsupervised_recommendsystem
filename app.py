@@ -20,7 +20,7 @@ cluster_labels = joblib.load("cluster_labels.pkl")
 # ===============================
 # LOAD DATA FOR RECOMMENDATION
 # ===============================
-df = pd.read_csv(r"/home/intellect/Documents/Unsupervised_recommendsystem/flipkart_com-ecommerce_sample.csv")
+df = pd.read_csv(r"flipkart_com-ecommerce_sample.csv")
 
 df['brand'].fillna('Unknown', inplace=True)
 df.dropna(subset=['retail_price', 'discounted_price'], inplace=True)
